@@ -6,12 +6,10 @@ export default function Header() {
 
   return (
     <>
-      
         <header className="bg-white sticky top-0 z-[9999999]">
           <TopHeader />
           <NavBar />
         </header>
-     
     </>
   );
 }

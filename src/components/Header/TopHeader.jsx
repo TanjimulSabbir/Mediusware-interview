@@ -1,4 +1,7 @@
 import React from "react";
+import FacebookIcon from "../../assets/Header/facebook.svg";
+import LinkedinIcon from "../../assets/Header/linkedin.svg";
+import { Link } from "react-router-dom";
 
 const TopHeader = () => {
   return (
@@ -19,12 +22,12 @@ const TopHeader = () => {
                 clipRule="evenodd"
               />
             </svg>
-            <a
-              href="tel:+880 1750 020408"
+            <Link
+              to="tel:+880 1750 020408"
               className="lg:text-xs text-[10px] lg:text-[14px] font-[450] ml-1 text-white"
             >
               +880 1750 020408
-            </a>
+            </Link>
 
             <span className="text-xs lg:mx-3 mx-1">|</span>
 
@@ -50,7 +53,7 @@ const TopHeader = () => {
           <div className="flex">
             <a href="https://www.facebook.com/mediusware/" target="_blank">
               <img
-                src="/src/assets/Header/facebook.svg"
+                src={FacebookIcon}
                 className="lg:mr-2 mr-1"
                 alt="Facebook Logo - Link to Mediusware Facebook Page"
                 height={17}
@@ -63,7 +66,7 @@ const TopHeader = () => {
               target="_blank"
             >
               <img
-                src="/src/assets/Header/linkedin.svg"
+                src={LinkedinIcon}
                 className="lg:mr-2 mr-1"
                 alt="Linkedin Logo - Link to Mediusware Linkedin Profile"
                 height={17}
